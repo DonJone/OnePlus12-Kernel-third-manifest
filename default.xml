@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote fetch="https://github.com/OnePlus-12-Development?q=android_kernel_oneplus_sm8650&type=all&language=&sort=" name="clo-la"/>
+  <remote fetch="https://github.com/OnePlus-12-Development?q=android_kernel_oneplus_sm8650&amp;type=all&amp;language=&amp;sort=" name="clo-la"/>
   <default remote="clo-la" revision="dummy_revision" sync-c="true" sync-tags="false"/>
   <remote fetch="https://github.com/OnePlus-12-Development" name="origin"/>
-  <remote fetch="https://github.com/OnePlus-12-Development/android_device_oneplus_sm8650-common/commit/96b77513144f89a065495e2a17b1a11af65bb120" name="chandu" revision="kplatform"/>
+  <remote fetch="https://github.com/OnePlus-12-Development/android_device_oneplus_sm8650-common/commit/96b77513144f89a065495e2a17b1a11af65bb120" name="yaap" revision="kplatform"/>
   <remote fetch="https://github.com/OnePlus-12-Development/android_device_oneplus_sm8650-common/commit/ff616f909bfe1bd135f320deb6021e7a15a07e32" name="personal" revision="kplatform"/>
   <project remote="personal" name="kernel_common_oneplus_sm8650" path="kernel_platform/common">
     <linkfile dest="kernel_platform/.source_date_epoch_dir" src="."/>
@@ -12,7 +12,7 @@
     <linkfile dest="kernel_platform/WORKSPACE" src="bazel.WORKSPACE"/>
     <linkfile dest="kernel_platform/build_with_bazel.py" src="build_with_bazel.py"/>
   </project>
-  <project remote="chandu" name="kernel_oneplus_sm8650_modules_and_devicetree" path="./" />
+  <project remote="yaap" name="kernel_oneplus_sm8650_modules_and_devicetree" path="./" />
   <project remote="clo-la" name="kernel/prebuilts/build-tools" path="kernel_platform/prebuilts/kernel-build-tools" revision="d153b7ab4a4956198957e258d4f370e875c53059" upstream="refs/heads/ks-kernel.lnx.3.0.r1-rel" clone-depth="1">
     <linkfile dest="kernel_platform/build/prebuilts/kernel-build-tools" src="."/>
   </project>
